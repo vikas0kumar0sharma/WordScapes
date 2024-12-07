@@ -14,20 +14,14 @@ function fun(text) {
             maze += text[i];
         }
     }
-    // console.log(maze.length);
+    console.log(maze);
     let r = Math.floor(Math.sqrt(maze.length));
-    // console.log(maze.length);
-    // console.log(r);
 
     let arr = new Array(r);
     for (let i = 0; i < r; i++) {
         arr[i] = new Array(r);
     }
-    // let x = r * r - maze.length;
-    // for (let i = 1; i <= x; i++) {
-    //     let c = 'A';
-    //     maze += c ;
-    // }
+
     let k = 0;
     for (let i = 0; i < r; i++) {
         for (let j = 0; j < r; j++) {
@@ -40,7 +34,6 @@ function fun(text) {
             }
         }
     }
-    // console.log(arr);
     obj = Matrix.M(arr);
     return arr;
 }
